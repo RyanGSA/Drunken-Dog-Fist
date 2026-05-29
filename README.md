@@ -7,34 +7,34 @@
 
 ---
 
-## Visão Geral
+## Visão Geral (IDEIA)
 
 | 🎮 Ryan — Core + Jogador | ⚔️ Alex — Inimigos + IA Combate | 🎨 Marcelo — Fases + UI + Arte |
 |:---:|:---:|:---:|
 | PlayerController | EnemyBase | LevelManager |
 | PlayerCombat | Capanga / Segurança / Mafioso | RoomManager |
-| PlayerMovement | MiniBoss AI | CheckpointSystem |
-| ComboSystem | Boss AI | HealthBarUI |
-| InputManager | WaveSpawner | CutsceneManager |
-| Dash / Esquiva | DamageSystem | Cenários (3 fases) |
-| GameManager | HitboxManager | Menu Principal |
-| AudioManager | Cachorros pós-Boss | Garrafas de Vida |
+| PlayerMovement | Boss AI / MiniBoss AI | CheckpointSystem |
+| ComboSystem | WaveSpawner | HealthBarUI |
+| InputManager | DamageSystem | CutsceneManager |
+| Dash / Esquiva | HitboxManager | Cenários (3 fases) |
+| GameManager | Cachorros pós-Boss | Menu Principal |
+| | | Garrafas de Vida |
 
 ---
 
-## 🎮 Ryan — Programação Core + Jogador
+## 🎮 Ryan (Programação Core + Jogador)
 
 Responsável por tudo que o jogador faz: mover, atacar, defender, combos.
 
 ---
 
-## ⚔️ Alex — Inimigos + IA de Combate
+## ⚔️ Alex (Inimigos + IA de Combate)
 
 Responsável por todos os inimigos, suas IAs, e os sistemas de dano/hitbox.
 
 ---
 
-## 🎨 Marcelo — Fases + UI + Direção de Arte
+## 🎨 Marcelo (Fases + UI + Direção de Arte)
 
 Responsável pelo level design, interface visual, cutscenes, cenários.
 
