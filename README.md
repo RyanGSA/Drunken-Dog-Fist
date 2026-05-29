@@ -3,6 +3,8 @@
 **Disciplina:** Introdução ao Desenvolvimento de Jogos  
 **Engine:** Unity | **Plataforma:** PC
 
+**GDD:** https://docs.google.com/document/d/10gOtCD9slmQS_b-CSi_CoCBgaaR1w_iDWzPIbAbOLlI/edit?usp=sharing
+
 ---
 
 ## Visão Geral
