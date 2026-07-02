@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: [
-  - player
-  - enemy  
-  ]
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Enemy
-  - EnemyHitbox
+  - 
+  - 
   - 
   - 
   - 
@@ -41,27 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Fundo
-    uniqueID: 4287795653
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-  - name: BG
-    uniqueID: 2279299979
-    locked: 0
-  - name: Level
-    uniqueID: 2211222361
-    locked: 0
-  - name: Player
-    uniqueID: 1203980033
-    locked: 0
-  - name: Enemy
-    uniqueID: 421220753
-    locked: 0
-=======
->>>>>>> f8e609b878c177d7c0d65a5a444317fb35c72175
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
