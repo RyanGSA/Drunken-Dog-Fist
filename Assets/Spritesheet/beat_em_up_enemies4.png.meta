@@ -1,73 +1,64 @@
 fileFormatVersion: 2
-guid: f7b9b4d0ab473154b93b2e11db59441c
+guid: 47b91b02ddbfeee4b87cdfae25aad2d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5181594041760893444
-    second: freebie_0
+      213: 7178037107714992000
+    second: beat_em_up_enemies4_0
   - first:
-      213: -2997306906044620064
-    second: freebie_1
+      213: -6517618721392082630
+    second: beat_em_up_enemies4_1
   - first:
-      213: -2930861973655283360
-    second: freebie_2
+      213: 8589542365831896151
+    second: beat_em_up_enemies4_2
   - first:
-      213: 83890064982942916
-    second: freebie_3
+      213: -661504095026785973
+    second: beat_em_up_enemies4_3
   - first:
-      213: -172120902059948387
-    second: freebie_4
+      213: -8720906738976610746
+    second: beat_em_up_enemies4_4
   - first:
-      213: 8543948304765264661
-    second: freebie_5
+      213: -5676507264320012830
+    second: beat_em_up_enemies4_5
   - first:
-      213: -4201900272861741969
-    second: freebie_6
+      213: -2540284969632153705
+    second: beat_em_up_enemies4_6
   - first:
-      213: 5354706698663519557
-    second: freebie_7
+      213: 7432121976522905585
+    second: beat_em_up_enemies4_7
   - first:
-      213: -7715265984059775714
-    second: freebie_8
+      213: 3781908720406939331
+    second: beat_em_up_enemies4_8
   - first:
-      213: -2033341770626257743
-    second: freebie_9
+      213: -761710009121928965
+    second: beat_em_up_enemies4_9
   - first:
-      213: 3272484404059350507
-    second: freebie_10
+      213: -7401736859845897001
+    second: beat_em_up_enemies4_10
   - first:
-      213: -4023128945060560014
-    second: freebie_11
+      213: 7971055792695527106
+    second: beat_em_up_enemies4_11
   - first:
-      213: -8436114725527830082
-    second: freebie_12
+      213: 3962156844309330485
+    second: beat_em_up_enemies4_12
   - first:
-      213: -8714540348698703446
-    second: freebie_13
+      213: -4897780806577032671
+    second: beat_em_up_enemies4_13
   - first:
-      213: 5329570859880171504
-    second: freebie_14
+      213: 3139888213329035353
+    second: beat_em_up_enemies4_14
   - first:
-      213: 6212581941671238482
-    second: freebie_15
+      213: 4899068630841063519
+    second: beat_em_up_enemies4_15
   - first:
-      213: 47848369723174808
-    second: freebie_16
+      213: 830097499531735058
+    second: beat_em_up_enemies4_16
   - first:
-      213: 8586678370288067000
-    second: freebie_17
+      213: 6256677853294291899
+    second: beat_em_up_enemies4_17
   - first:
-      213: 3968174739673307048
-    second: freebie_18
-  - first:
-      213: 84013073540525412
-    second: freebie_19
-  - first:
-      213: 4250952121046839924
-    second: freebie_20
-  - first:
-      213: -5196327004543938891
-    second: freebie_21
+      213: -8802725024493630165
+    second: beat_em_up_enemies4_18
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -176,13 +167,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: freebie_0
+      name: beat_em_up_enemies4_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 288
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40a4075e358b8e740800000000000000
-      internalID: 5181594041760893444
+      spriteID: 087ace5f7b28d9360800000000000000
+      internalID: 7178037107714992000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_1
+      name: beat_em_up_enemies4_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 32
-        height: 32
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e2a266df3d6766d0800000000000000
-      internalID: -2997306906044620064
+      spriteID: a314df10e44cc85a0800000000000000
+      internalID: -6517618721392082630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_2
+      name: beat_em_up_enemies4_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 48
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,42 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0699396309c7357d0800000000000000
-      internalID: -2930861973655283360
+      spriteID: 75c149ab54f243770800000000000000
+      internalID: 8589542365831896151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c42e73d1990a2100800000000000000
-      internalID: 83890064982942916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_4
+      name: beat_em_up_enemies4_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 128
-        width: 32
-        height: 32
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d960c4693f08c9df0800000000000000
-      internalID: -172120902059948387
+      spriteID: b415676c78dd1d6f0800000000000000
+      internalID: -661504095026785973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_5
+      name: beat_em_up_enemies4_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 144
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,42 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 513a5d427b3329670800000000000000
-      internalID: 8543948304765264661
+      spriteID: 6462df7b68d19f680800000000000000
+      internalID: -8720906738976610746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_6
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6c7576e6f9dfa5c0800000000000000
-      internalID: -4201900272861741969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_7
+      name: beat_em_up_enemies4_5
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
-        width: 32
-        height: 32
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5456e3a3f5dbf4a40800000000000000
-      internalID: 5354706698663519557
+      spriteID: 2edf741f7bef831b0800000000000000
+      internalID: -5676507264320012830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_8
+      name: beat_em_up_enemies4_6
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
+        x: 240
+        y: 240
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +314,174 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e156678f67edde490800000000000000
-      internalID: -7715265984059775714
+      spriteID: 79fbfc477481fbcd0800000000000000
+      internalID: -2540284969632153705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_9
+      name: beat_em_up_enemies4_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f795028f83342760800000000000000
+      internalID: 7432121976522905585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6cecc91f90c7430800000000000000
+      internalID: 3781908720406939331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf88d6c48ccdd65f0800000000000000
+      internalID: -761710009121928965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d458f3ca8fb74990800000000000000
+      internalID: -7401736859845897001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6cf60d201ee9e60800000000000000
+      internalID: 7971055792695527106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ab07158a86cf630800000000000000
+      internalID: 3962156844309330485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122ff345e46970cb0800000000000000
+      internalID: -4897780806577032671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beat_em_up_enemies4_14
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,42 +490,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bcabd6ce6e18c3e0800000000000000
-      internalID: -2033341770626257743
+      spriteID: 950c9e5b1bf139b20800000000000000
+      internalID: 3139888213329035353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be5a6f42a333a6d20800000000000000
-      internalID: 3272484404059350507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_11
+      name: beat_em_up_enemies4_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +512,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 273c2183a89fa28c0800000000000000
-      internalID: -4023128945060560014
+      spriteID: f587a8f96fcfcf340800000000000000
+      internalID: 4899068630841063519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_12
+      name: beat_em_up_enemies4_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,196 +534,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb1c8748a56ecea80800000000000000
-      internalID: -8436114725527830082
+      spriteID: 210778c1749158b00800000000000000
+      internalID: 830097499531735058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freebie_13
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa9410779bbbf0780800000000000000
-      internalID: -8714540348698703446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f74e64b57076f940800000000000000
-      internalID: 5329570859880171504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_15
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25b125b3c56873650800000000000000
-      internalID: 6212581941671238482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_16
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89f6e68b6ddf9a000800000000000000
-      internalID: 47848369723174808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_17
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b1ec8dcb720a2770800000000000000
-      internalID: 8586678370288067000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_18
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a7d7e4c6e9c11730800000000000000
-      internalID: 3968174739673307048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_19
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46d2fdcf1797a2100800000000000000
-      internalID: 84013073540525412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_20
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 472b03c7e6a6efa30800000000000000
-      internalID: 4250952121046839924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freebie_21
+      name: beat_em_up_enemies4_17
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,8 +556,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5be8365ee10f2e7b0800000000000000
-      internalID: -5196327004543938891
+      spriteID: bbbe8a7bb5f24d650800000000000000
+      internalID: 6256677853294291899
       vertices: []
       indices: 
       edges: []
@@ -663,7 +566,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 349971ccc1970f4428e7b5e019289ce3
+    spriteID: 61f42bed07629a341be7dcc54a1b8ee0
     internalID: 0
     vertices: []
     indices: 
@@ -673,30 +576,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":6.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":7.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      freebie_0: 5181594041760893444
-      freebie_1: -2997306906044620064
-      freebie_10: 3272484404059350507
-      freebie_11: -4023128945060560014
-      freebie_12: -8436114725527830082
-      freebie_13: -8714540348698703446
-      freebie_14: 5329570859880171504
-      freebie_15: 6212581941671238482
-      freebie_16: 47848369723174808
-      freebie_17: 8586678370288067000
-      freebie_18: 3968174739673307048
-      freebie_19: 84013073540525412
-      freebie_2: -2930861973655283360
-      freebie_20: 4250952121046839924
-      freebie_21: -5196327004543938891
-      freebie_3: 83890064982942916
-      freebie_4: -172120902059948387
-      freebie_5: 8543948304765264661
-      freebie_6: -4201900272861741969
-      freebie_7: 5354706698663519557
-      freebie_8: -7715265984059775714
-      freebie_9: -2033341770626257743
+      beat_em_up_enemies4_0: 7178037107714992000
+      beat_em_up_enemies4_1: -6517618721392082630
+      beat_em_up_enemies4_10: -7401736859845897001
+      beat_em_up_enemies4_11: 7971055792695527106
+      beat_em_up_enemies4_12: 3962156844309330485
+      beat_em_up_enemies4_13: -4897780806577032671
+      beat_em_up_enemies4_14: 3139888213329035353
+      beat_em_up_enemies4_15: 4899068630841063519
+      beat_em_up_enemies4_16: 830097499531735058
+      beat_em_up_enemies4_17: 6256677853294291899
+      beat_em_up_enemies4_2: 8589542365831896151
+      beat_em_up_enemies4_3: -661504095026785973
+      beat_em_up_enemies4_4: -8720906738976610746
+      beat_em_up_enemies4_5: -5676507264320012830
+      beat_em_up_enemies4_6: -2540284969632153705
+      beat_em_up_enemies4_7: 7432121976522905585
+      beat_em_up_enemies4_8: 3781908720406939331
+      beat_em_up_enemies4_9: -761710009121928965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
