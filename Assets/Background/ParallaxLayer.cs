@@ -24,10 +24,37 @@ public class ParallaxLayer : MonoBehaviour
         for (int i = 0; i < childCount; i++)
             segments[i] = transform.GetChild(i);
 
-        // pega a largura real do sprite direto do primeiro segmento
         SpriteRenderer sr = segments[0].GetComponentInChildren<SpriteRenderer>();
         segmentWidth = sr.bounds.size.x;
         totalWidth = segmentWidth * segments.Length;
+
+        PositionSegments();
+    }
+
+    void PositionSegments()
+    {
+        // Ordena os segmentos pela posição X atual, assim identificamos
+        // automaticamente quem é o da esquerda, o do meio e o da direita,
+        // não importa a ordem dos filhos na hierarquia.
+        System.Array.Sort(segments, (a, b) => a.position.x.CompareTo(b.position.x));
+
+        // Assume 3 segmentos (esquerda, centro, direita).
+        Transform left = segments[0];
+        Transform center = segments[1];
+        Transform right = segments[2];
+
+        // Reposiciona os laterais com base no X atual do central.
+        left.position = new Vector3(
+            center.position.x - segmentWidth,
+            left.position.y,
+            left.position.z
+        );
+
+        right.position = new Vector3(
+            center.position.x + segmentWidth,
+            right.position.y,
+            right.position.z
+        );
     }
 
     void LateUpdate()
@@ -43,7 +70,6 @@ public class ParallaxLayer : MonoBehaviour
         lastCameraPosition = cameraTransform.position;
         transform.position = new Vector3(transform.position.x, transform.position.y, startZ);
 
-        // reciclagem infinita
         float camX = cameraTransform.position.x;
 
         foreach (Transform seg in segments)
