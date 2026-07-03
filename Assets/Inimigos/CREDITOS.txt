@@ -1,5 +1,22 @@
-Sprites dos inimigos:
-CraftPix - https://craftpix.net/file-licenses/
+DRUNKEN DOG FIST — Créditos
 
-Interface (Stone UI):
-Stone Game UI [PixelArt] - Yashe - https://yashe.itch.io/stone-ui
+DESENVOLVEDORES
+Alex Alves de Sousa
+Ryan Gonçalves Souza Araujo
+Marcelo Mikael Pinheiro Lessa Peres
+
+ARTE DOS INIMIGOS — CraftPix.net
+Raiders, Gangsters, Homeless, City Man
+https://craftpix.net/file-licenses/
+
+INTERFACE (UI) — Canvas Coven
+Stone UI Free Asset
+https://canvas-coven.itch.io/stone-ui-free-asset
+
+MÚSICA — ansimuz
+Action Music Pack 1
+https://ansimuz.itch.io/action-music-pack-1
+
+ITEM (SAKE) — Pop Shop Packs
+Bottles Pixel Asset Pack
+https://pop-shop-packs.itch.io/bottles-pixel-asset-pack
