@@ -1158,8 +1158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe503cb7a48fa984eb63aed025cbe694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GerenteMusica
-  musicaAmbiente: {fileID: 8300000, guid: fc654285cc3804e4b98fb2e0cc56e15b, type: 3}
-  musicaChefe: {fileID: 8300000, guid: bfd6678ce477f2448a82419b0c6601b3, type: 3}
+  musicaAmbiente: {fileID: 8300000, guid: c9ff46a71326c4c4aa2e150ef2154734, type: 3}
+  musicaChefe: {fileID: 8300000, guid: cb00378004dbf39498140ca532d1f932, type: 3}
 --- !u!82 &881417896
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1173,7 +1173,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.03
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
