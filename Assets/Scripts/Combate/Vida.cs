@@ -11,6 +11,7 @@ public class Vida : MonoBehaviour
 
     public event Action<InfoDano> aoReceberDano;
     public event Action aoMorrer;
+    public event Action aoCurar;
 
     void Awake()
     {
@@ -26,5 +27,12 @@ public class Vida : MonoBehaviour
 
         if (vidaAtual <= 0f)
             aoMorrer?.Invoke();
+    }
+
+    public void curar(float valor)
+    {
+        if (estaMorto) return;
+        vidaAtual = Mathf.Min(vidaMaxima, vidaAtual + valor);
+        aoCurar?.Invoke();
     }
 }

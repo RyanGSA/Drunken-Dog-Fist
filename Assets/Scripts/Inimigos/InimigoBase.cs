@@ -80,7 +80,11 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
             spriteAlvo = jogador.GetComponentInChildren<SpriteRenderer>();
         }
 
-        if (ehChefe) BarraFlutuante.criar(vida);
+        if (ehChefe)
+        {
+            BarraFlutuante.criar(vida);
+            GerenteMusica.tocarChefe();
+        }
     }
 
     protected virtual void Update()

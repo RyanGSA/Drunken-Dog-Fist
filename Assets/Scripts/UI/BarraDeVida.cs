@@ -9,12 +9,16 @@ public class BarraDeVida : MonoBehaviour
 
     void OnEnable()
     {
-        if (vida != null) vida.aoReceberDano += quandoLevaDano;
+        if (vida == null) return;
+        vida.aoReceberDano += quandoLevaDano;
+        vida.aoCurar += atualizar;
     }
 
     void OnDisable()
     {
-        if (vida != null) vida.aoReceberDano -= quandoLevaDano;
+        if (vida == null) return;
+        vida.aoReceberDano -= quandoLevaDano;
+        vida.aoCurar -= atualizar;
     }
 
     void Start() => atualizar();
