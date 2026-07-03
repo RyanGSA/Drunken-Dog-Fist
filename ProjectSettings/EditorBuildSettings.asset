@@ -20,5 +20,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vitoria.unity
     guid: 3dfeaedaf1802cf439794509b027bcb1
+  - enabled: 1
+    path: Assets/Scenes/Cutscene1.unity
+    guid: 1ec9bfc804d26bf489b6e56b47a00783
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 9fa26020896caa043ae00f59dcfadc65
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3.unity
+    guid: d755faf13079e8e489896d97b2db7ee5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

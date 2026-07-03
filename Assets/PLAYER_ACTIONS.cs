@@ -303,6 +303,50 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dd5ae48e-5fa2-4618-98c5-b5ea17668a8c"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""996b58b6-32f8-43a3-8907-9ccebc56bb45"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""df645a88-2d5b-44c6-9349-d966c4282083"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""13c24729-2626-4792-883b-618d58ec14de"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee818dc5a3314f648b7b20c69f8c171c
+guid: ece1588c95125e84681cd9c62cb6e1ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1946397641332756791
-    second: ima555ge_0
+      213: -2528804737567107107
+    second: inicio_lvl1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ima555ge_0
+      name: inicio_lvl1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cee3bc58a10df4e0800000000000000
-      internalID: -1946397641332756791
+      spriteID: dd7dcf64d71e7ecd0800000000000000
+      internalID: -2528804737567107107
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ima555ge_0: -1946397641332756791
+      inicio_lvl1_0: -2528804737567107107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

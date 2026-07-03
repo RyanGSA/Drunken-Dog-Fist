@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: velocidade
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8545857922594094982, guid: 5408742bf0e6cd0409882d00291d8f18, type: 3}
+      propertyPath: afterImagePrefab
+      value: 
+      objectReference: {fileID: 8225797939826329213, guid: cc15eabc2d604a54c963e5b4a6015cd9, type: 3}
     - target: {fileID: 9174354682314353809, guid: 5408742bf0e6cd0409882d00291d8f18, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2894,6 +2898,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079659924}
   m_CullTransparentMesh: 1
+--- !u!1001 &523669672160296817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 789976867332094688, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 565877994}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.60613
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.43227
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365935904489343919, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094567773786592314, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 565877994}
+    - target: {fileID: 5315864949258592591, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
+      propertyPath: m_Name
+      value: Colisao
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 196fae661dea2c644b41a67605d1a955, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2907,3 +2976,4 @@ SceneRoots:
   - {fileID: 1613107038}
   - {fileID: 1608883510}
   - {fileID: 2005297471}
+  - {fileID: 523669672160296817}

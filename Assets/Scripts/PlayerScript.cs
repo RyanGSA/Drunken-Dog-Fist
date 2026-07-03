@@ -65,6 +65,22 @@ public class PlayerScript : MonoBehaviour
                 case "right":
                     StartCoroutine(Dash(Vector2.right));
                     break;
+
+                case "w":
+                    StartCoroutine(Dash(Vector2.up));
+                    break;
+
+                case "s":
+                    StartCoroutine(Dash(Vector2.down));
+                    break;
+
+                case "a":
+                    StartCoroutine(Dash(Vector2.left));
+                    break;
+
+                case "d":
+                    StartCoroutine(Dash(Vector2.right));
+                    break;
             }
         };
 
