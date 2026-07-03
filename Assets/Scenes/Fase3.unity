@@ -204,6 +204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background_Lab
       objectReference: {fileID: 0}
+    - target: {fileID: 329522630885859339, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1071827426524397242, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
       propertyPath: cameraTransform
       value: 
@@ -216,6 +220,10 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 565877994}
+    - target: {fileID: 4340366622195204433, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5045949432320792940, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.53
@@ -257,7 +265,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7423163414714585132, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8162d6f18b94214a960547b2427a38a, type: 3}
