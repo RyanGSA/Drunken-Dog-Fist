@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -12,9 +13,13 @@ public class PlayerScript : MonoBehaviour
     private Vector2 movement;
     public GameObject hitbox;
     private CaixaDeDano caixa;
+    private bool isDashing = false;
+    public GameObject afterImagePrefab;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
-    {
+    {   
+        spriteRenderer = GetComponent<SpriteRenderer>();
         controls = new PLAYER_ACTIONS();
         anim = GetComponent<Animator>();
         corpo = GetComponent<Rigidbody2D>();
@@ -35,6 +40,33 @@ public class PlayerScript : MonoBehaviour
 
         controls.Player.Move.performed += ctx => movement = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += ctx => movement = Vector2.zero;
+
+        controls.Player.Dash.performed += ctx =>
+        {
+            if (isDashing)
+                return;
+
+
+
+            switch (ctx.control.name)
+            {
+                case "up":
+                    StartCoroutine(Dash(Vector2.up));
+                    break;
+
+                case "down":
+                    StartCoroutine(Dash(Vector2.down));
+                    break;
+
+                case "left":
+                    StartCoroutine(Dash(Vector2.left));
+                    break;
+
+                case "right":
+                    StartCoroutine(Dash(Vector2.right));
+                    break;
+            }
+        };
 
         controls.Player.Light_Atk.started += _ =>
         {
@@ -78,6 +110,7 @@ public class PlayerScript : MonoBehaviour
     private void Update()
     {
         anim.SetBool("walking", movement != Vector2.zero);
+        anim.SetBool("dashing", isDashing);
 
         if (movement.x < 0)
             transform.localScale = new Vector3(-6, 6, 6);
@@ -88,7 +121,10 @@ public class PlayerScript : MonoBehaviour
     // movimento por MovePosition (corpo dynamic): faz varredura e para no contato com o inimigo,
     // em vez de forcar velocidade pra dentro dele (que atravessava)
     private void FixedUpdate()
-    {
+    {   
+        if (isDashing)
+            return;
+
         corpo.linearVelocity = Vector2.zero;
         corpo.MovePosition(corpo.position + movement * velocidade * Time.fixedDeltaTime);
     }
@@ -97,5 +133,41 @@ public class PlayerScript : MonoBehaviour
     {
         controls.Player.Move.Enable();
         movement = controls.Player.Move.ReadValue<Vector2>();
+    }
+
+    IEnumerator Dash(Vector2 direction)
+    {
+        isDashing = true;
+
+        float timer = 0f;
+
+        while (timer < 0.20f)
+        {
+            corpo.MovePosition(corpo.position + direction * 20f * Time.fixedDeltaTime);
+            SpawnAfterImage();
+            yield return new WaitForSeconds(0.03f);
+
+            timer += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+            
+        }
+
+        isDashing = false;
+    }
+
+    void SpawnAfterImage()
+    {
+        GameObject ghost = Instantiate(afterImagePrefab, transform.position, transform.rotation);
+
+        ghost.transform.localScale = transform.localScale;
+
+        SpriteRenderer ghostSR = ghost.GetComponent<SpriteRenderer>();
+
+        ghostSR.sprite = spriteRenderer.sprite;
+        ghostSR.flipX = spriteRenderer.flipX;
+        ghostSR.color = Color.white;
+
+        ghostSR.sortingLayerID = spriteRenderer.sortingLayerID;
+        ghostSR.sortingOrder = spriteRenderer.sortingOrder - 1;
     }
 }

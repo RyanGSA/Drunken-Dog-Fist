@@ -127,6 +127,15 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""356194c2-ce57-45d3-8aca-1737c38d3983"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -250,6 +259,50 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
                     ""action"": ""Zip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""22371f48-23ed-421c-8377-dca5dbd9a21f"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""775022ff-7f71-4269-9d9d-4dfd8f0286fb"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""91de5fa4-f78b-4e4d-99ad-336ef89e454c"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ceaafa4-59b2-4c99-8aae-a3e038391aac"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": ""MultiTap(tapTime=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -262,6 +315,7 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
         m_Player_Light_Atk = m_Player.FindAction("Light_Atk", throwIfNotFound: true);
         m_Player_Heavy_Atk = m_Player.FindAction("Heavy_Atk", throwIfNotFound: true);
         m_Player_Zip = m_Player.FindAction("Zip", throwIfNotFound: true);
+        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
     }
 
     ~@PLAYER_ACTIONS()
@@ -346,6 +400,7 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Light_Atk;
     private readonly InputAction m_Player_Heavy_Atk;
     private readonly InputAction m_Player_Zip;
+    private readonly InputAction m_Player_Dash;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -373,6 +428,10 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Zip".
         /// </summary>
         public InputAction @Zip => m_Wrapper.m_Player_Zip;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Dash".
+        /// </summary>
+        public InputAction @Dash => m_Wrapper.m_Player_Dash;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -411,6 +470,9 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
             @Zip.started += instance.OnZip;
             @Zip.performed += instance.OnZip;
             @Zip.canceled += instance.OnZip;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         /// <summary>
@@ -434,6 +496,9 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
             @Zip.started -= instance.OnZip;
             @Zip.performed -= instance.OnZip;
             @Zip.canceled -= instance.OnZip;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         /// <summary>
@@ -502,5 +567,12 @@ public partial class @PLAYER_ACTIONS: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnZip(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Dash" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDash(InputAction.CallbackContext context);
     }
 }

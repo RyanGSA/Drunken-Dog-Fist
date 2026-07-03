@@ -41,6 +41,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "356194c2-ce57-45d3-8aca-1737c38d3983",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -162,6 +171,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Zip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "22371f48-23ed-421c-8377-dca5dbd9a21f",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "MultiTap(tapTime=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "775022ff-7f71-4269-9d9d-4dfd8f0286fb",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "MultiTap(tapTime=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91de5fa4-f78b-4e4d-99ad-336ef89e454c",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "MultiTap(tapTime=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ceaafa4-59b2-4c99-8aae-a3e038391aac",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "MultiTap(tapTime=0.5)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
