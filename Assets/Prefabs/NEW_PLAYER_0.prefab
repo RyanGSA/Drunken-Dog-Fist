@@ -11,10 +11,13 @@ GameObject:
   - component: {fileID: 2614489237716664203}
   - component: {fileID: 2674136728315195370}
   - component: {fileID: 5540863637805819567}
-  - component: {fileID: 8545857922594094982}
   - component: {fileID: 1122921958082376679}
   - component: {fileID: 6139528979287223006}
-  m_Layer: 0
+  - component: {fileID: 8545857922594094982}
+  - component: {fileID: 5014017779836180244}
+  - component: {fileID: 7621419637443398789}
+  - component: {fileID: 447139115441742463}
+  m_Layer: 8
   m_Name: NEW_PLAYER_0
   m_TagString: player
   m_Icon: {fileID: 0}
@@ -118,21 +121,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8545857922594094982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4216077140557017716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a1633ba9a75da44ab5b59c5d09deacc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
-  health: 30
-  velocidade: 3
-  hitbox: {fileID: 6830984148002907286}
 --- !u!61 &1122921958082376679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +155,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0048689544, y: -0.029213756}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -177,7 +165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.19372985, y: 0.28104842}
   m_EdgeRadius: 0
 --- !u!50 &6139528979287223006
 Rigidbody2D:
@@ -205,7 +193,68 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &8545857922594094982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216077140557017716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1633ba9a75da44ab5b59c5d09deacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
+  velocidade: 3
+  danoSocoFraco: 10
+  danoSocoForte: 18
+  hitbox: {fileID: 6830984148002907286}
+--- !u!114 &5014017779836180244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216077140557017716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1571dcee07672bd41b98109bcddf99ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vida
+  vidaMaxima: 100
+--- !u!114 &7621419637443398789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216077140557017716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef909b96e5d73d4e8d51e55d97aaebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaDoJogador
+  tempoInvencivel: 0.6
+  telaGameOver: {fileID: 0}
+--- !u!114 &447139115441742463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216077140557017716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc048f462f6e6f4ab3e1b2ba3314ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CaixaDeDano
+  alvos:
+    serializedVersion: 2
+    m_Bits: 64
+  dano: 10
+  empurrao: 0
+  dono: {fileID: 4216077140557017716}
 --- !u!1 &6830984148002907286
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +266,7 @@ GameObject:
   - component: {fileID: 3645670363449835062}
   - component: {fileID: 9174354682314353809}
   - component: {fileID: 4038689982836457245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +381,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5448868, y: -0.11268145}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -342,5 +391,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1720688, y: 0.7746371}
   m_EdgeRadius: 0

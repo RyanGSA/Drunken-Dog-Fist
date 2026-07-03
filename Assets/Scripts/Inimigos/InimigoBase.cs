@@ -8,10 +8,11 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
     protected enum Estado { Parado, Perseguindo, Atacando, Atordoado, Morto }
 
     [Header("Atributos")]
-    [SerializeField] protected float velocidade = 2f;
+    [SerializeField] protected float velocidade = 5f;
     [SerializeField] protected float alcanceVisao = 6f;
-    [SerializeField] protected float alcanceAtaque = 1.1f;
+    [SerializeField] protected float alcanceAtaque = 0.8f;
     [SerializeField] protected float tempoAtordoado = 0.25f;
+    [SerializeField] protected bool ehChefe;
 
     [Header("Ataque melee")]
     [SerializeField] protected CaixaDeDano caixaDeDano;
@@ -29,6 +30,7 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
     protected Collider2D colisor;
     protected Vida vida;
     protected Transform alvo;
+    private SpriteRenderer spriteAlvo;
 
     protected Estado estado = Estado.Parado;
     protected bool estaAtacando;
@@ -48,8 +50,10 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
 
         escalaBaseX = Mathf.Abs(transform.localScale.x);
 
+        // kinematic = parede imovel. o player (dynamic + MovePosition) bate e nao atravessa.
         corpo.bodyType = RigidbodyType2D.Kinematic;
         corpo.gravityScale = 0f;
+        corpo.useFullKinematicContacts = true;
 
         caixaDeDano.valorDano = danoAtaque;
         caixaDeDano.desativar();
@@ -69,8 +73,14 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
 
     protected virtual void Start()
     {
-        GameObject jogador = GameObject.FindWithTag("Player");
-        if (jogador != null) alvo = jogador.transform;
+        GameObject jogador = GameObject.FindWithTag("player");
+        if (jogador != null)
+        {
+            alvo = jogador.transform;
+            spriteAlvo = jogador.GetComponentInChildren<SpriteRenderer>();
+        }
+
+        if (ehChefe) BarraFlutuante.criar(vida);
     }
 
     protected virtual void Update()
@@ -105,7 +115,7 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
 
         virarParaAlvo();
         definirAndando(true);
-        corpo.MovePosition(Vector2.MoveTowards(corpo.position, (Vector2)alvo.position, velocidade * Time.deltaTime));
+        corpo.MovePosition(Vector2.MoveTowards(corpo.position, pontoAlvo(), velocidade * Time.deltaTime));
     }
 
     // atiradores aumentam pra atacar de mais longe
@@ -203,7 +213,15 @@ public abstract class InimigoBase : MonoBehaviour, IDanificavel
     }
 
     protected float distanciaAlvo() =>
-        alvo == null ? Mathf.Infinity : Vector2.Distance(corpo.position, (Vector2)alvo.position);
+        alvo == null ? Mathf.Infinity : Vector2.Distance(corpo.position, pontoAlvo());
+
+    // mira na base (pes) do player, nao no centro do sprite, pra ficar na mesma linha do chao
+    protected Vector2 pontoAlvo()
+    {
+        if (alvo == null) return corpo.position;
+        float y = spriteAlvo != null ? spriteAlvo.bounds.min.y : alvo.position.y;
+        return new Vector2(alvo.position.x, y);
+    }
 
     // vira o objeto inteiro (sprite + caixa de dano) no eixo x
     protected void virarParaAlvo()

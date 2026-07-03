@@ -1,1 +1,5 @@
-https://craftpix.net/file-licenses/
+Sprites dos inimigos:
+CraftPix - https://craftpix.net/file-licenses/
+
+Interface (Stone UI):
+Stone Game UI [PixelArt] - Yashe - https://yashe.itch.io/stone-ui

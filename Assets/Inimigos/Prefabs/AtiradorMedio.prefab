@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 930905147753824792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0.405, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 4120644998501400183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.08604042, y: -0.26136807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -108,7 +108,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.82012355, y: 0.37726384}
   m_EdgeRadius: 0
 --- !u!114 &1224522787721342595
 MonoBehaviour:
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CaixaDeDano
   alvos:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   dano: 5
   empurrao: 3
   dono: {fileID: 5793283404819084772}
@@ -160,7 +160,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 825372871512887255}
@@ -309,8 +309,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.6}
-  m_Size: {x: 0.6, y: 1.2}
+  m_Offset: {x: -0.04220858, y: 0.32986808}
+  m_Size: {x: 0.2870129, y: 0.65973616}
   m_Direction: 0
 --- !u!114 &1558757437882659041
 MonoBehaviour:
@@ -337,10 +337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433b0abbc55018044972f214574e7463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InimigoAtirador
-  velocidade: 2
+  velocidade: 5
   alcanceVisao: 11
-  alcanceAtaque: 1.1
+  alcanceAtaque: 0.8
   tempoAtordoado: 0.25
+  ehChefe: 1
   caixaDeDano: {fileID: 1224522787721342595}
   danoAtaque: 6
   recarga: 1.2
@@ -356,8 +357,8 @@ MonoBehaviour:
   empurraoTiro: 2
   delayTiro: 0.3
   cadenciaTiro: 1.5
-  tirosAntesDeRecarregar: 3
+  tirosAntesDeRecarregar: 5
   tempoRecarregar: 1.4
   alvoDoTiro:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256

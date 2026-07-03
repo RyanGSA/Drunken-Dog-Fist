@@ -6,6 +6,7 @@ public class Vida : MonoBehaviour
     [SerializeField] private float vidaMaxima = 30f;
 
     public float vidaAtual { get; private set; }
+    public float vidaTotal => vidaMaxima;
     public bool estaMorto => vidaAtual <= 0f;
 
     public event Action<InfoDano> aoReceberDano;
