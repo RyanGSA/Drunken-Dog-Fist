@@ -340,7 +340,7 @@ MonoBehaviour:
   velocidade: 5
   alcanceVisao: 13
   alcanceAtaque: 0.8
-  tempoAtordoado: 0.25
+  tempoAtordoado: 0.05
   ehChefe: 1
   caixaDeDano: {fileID: 8299197799837647221}
   danoAtaque: 6
@@ -355,9 +355,9 @@ MonoBehaviour:
   alcanceTiro: 7
   danoTiro: 5
   empurraoTiro: 2
-  delayTiro: 0.3
-  cadenciaTiro: 0.8
-  tirosAntesDeRecarregar: 15
+  delayTiro: 0.15
+  cadenciaTiro: 1
+  tirosAntesDeRecarregar: 8
   tempoRecarregar: 1.4
   alvoDoTiro:
     serializedVersion: 2

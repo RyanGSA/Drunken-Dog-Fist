@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1571dcee07672bd41b98109bcddf99ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vida
-  vidaMaxima: 20
+  vidaMaxima: 50
 --- !u!114 &4793171541943801629
 MonoBehaviour:
   m_ObjectHideFlags: 0

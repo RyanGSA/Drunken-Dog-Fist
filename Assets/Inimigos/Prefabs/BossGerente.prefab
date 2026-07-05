@@ -308,7 +308,7 @@ MonoBehaviour:
   velocidade: 5
   alcanceVisao: 6
   alcanceAtaque: 0.8
-  tempoAtordoado: 0.25
+  tempoAtordoado: 0.2
   ehChefe: 1
   caixaDeDano: {fileID: 152027635107922012}
   danoAtaque: 6

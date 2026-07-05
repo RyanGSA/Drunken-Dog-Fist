@@ -208,8 +208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
   velocidade: 3
   danoSocoFraco: 10
-  danoSocoForte: 18
+  danoSocoForte: 35
   hitbox: {fileID: 6830984148002907286}
+  afterImagePrefab: {fileID: 0}
 --- !u!114 &5014017779836180244
 MonoBehaviour:
   m_ObjectHideFlags: 0

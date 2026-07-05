@@ -10,6 +10,11 @@ public class Chefe : InimigoAtirador
     [SerializeField] private int cachorrosMin = 2;
     [SerializeField] private int cachorrosMax = 7;
 
+
+    protected override void quandoLevaDano(InfoDano dano)
+    {
+        return;
+    }
     protected override void iniciarAtaque()
     {
         if (estaAtacando) return;
